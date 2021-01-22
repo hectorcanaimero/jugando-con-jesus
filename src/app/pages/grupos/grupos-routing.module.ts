@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: GruposPage
+  },
+  {
+    path: 'alumnos/:id',
+    component: GruposPage
   }
 ];
 

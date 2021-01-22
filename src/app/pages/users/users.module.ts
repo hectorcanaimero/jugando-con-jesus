@@ -1,3 +1,4 @@
+import { WidgetsModule } from './../../shared/widgets/widgets.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -14,6 +15,7 @@ import { AddUserComponent } from './add-user/add-user.component';
     CommonModule,
     ReactiveFormsModule,
     IonicModule,
+    WidgetsModule,
     UsersPageRoutingModule
   ],
   declarations: [UsersPage, AddUserComponent]

@@ -1,0 +1,15 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="jesus">
+    <ion-button slot="start" (click)="onClose()" fill="clear" color="warning">
+      cancelar
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="jesus">
+  <div class="container">
+    <ion-label>
+      <h2>{{ user.name }}</h2>
+    </ion-label>
+    <ion-textarea #input rows="10" placeholder="digite su mensaje hasta 200 caracteres." autofocus="true" enterkeyhint="send" maxlength="200"></ion-textarea>
+  </div>
+</ion-content>

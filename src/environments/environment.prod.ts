@@ -1,5 +1,12 @@
 export const environment = {
   production: true,
+  url_public: 'app.tienditavirtual.net',
+  cloudinary: {
+    url: 'https://api.cloudinary.com/v1_1/knaimero/image/upload',
+    preset: 'yemaima',
+    cloud: 'knaimero',
+    key: '945767919893744'
+  },
   firebase: {
     apiKey: 'AIzaSyBsM_vZNnByKoA3HzUna3UOSA2_jZwZUcI',
     authDomain: 'jugando-con-jesus.firebaseapp.com',

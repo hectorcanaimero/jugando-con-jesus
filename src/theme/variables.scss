@@ -3,6 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-color-jesus: #5a9bd5;
+  --ion-color-jesus-rgb: 90,155,213;
+  --ion-color-jesus-contrast: #ffffff;
+  --ion-color-jesus-contrast-rgb:  255, 255, 255;
+  --ion-color-jesus-shade: #4f88bb;
+  --ion-color-jesus-tint: #6ba5d9;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -229,6 +236,15 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+.ion-color-jesus {
+  --ion-color-base: var(--ion-color-jesus);
+  --ion-color-base-rgb: var(--ion-color-jesus-rgb);
+  --ion-color-contrast: var(--ion-color-jesus-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-jesus-contrast-rgb);
+  --ion-color-shade: var(--ion-color-jesus-shade);
+  --ion-color-tint: var(--ion-color-jesus-tint);
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

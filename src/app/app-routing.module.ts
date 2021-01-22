@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'signin',
+    path: 'sign-in',
     loadChildren: () => import('./users/signin/signin.module').then( m => m.SigninPageModule)
   },
   {

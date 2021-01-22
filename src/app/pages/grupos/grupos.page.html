@@ -1,9 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>grupos</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<app-header></app-header>
+<ion-content color="jesus">
+  <app-titulo titulo="Grupos"></app-titulo>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items$ | async">
+      <ion-item-options side="start">
+        <ion-item-option color="danger" (click)="onDelete(item)">Eliminar</ion-item-option>
+      </ion-item-options>
+      <ion-item mode="ios" color="jesus">
+        <ion-label>
+          <h2>{{ item.name }}</h2>
+        </ion-label>
+        <ion-badge color="warning" mode="ios">{{ item.cant }}</ion-badge>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="light" (click)="onView(item)">Ver Alumnos</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="light" (click)="onAdd()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
