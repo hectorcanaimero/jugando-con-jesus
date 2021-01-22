@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" (click)="onClose()" fill="clear">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <form [formGroup]="form">
+      <div class="mb-3">
+        <ion-item>
+          <ion-label  position="floating">Nombre <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" formControlName="name"></ion-input>
+        </ion-item>
+      </div>
+      <div class="mb-3">
+        <ion-item>
+          <ion-label  position="floating">E-mail <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="email" formControlName="email" inputmode="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="mb-3">
+        <ion-item>
+          <ion-label  position="floating">Telefono <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="tel" formControlName="phone" inputmode="tel"></ion-input>
+        </ion-item>
+      </div>
+      <div class="mb-3">
+        <ion-item>
+          <ion-label  position="floating">Clave <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="password" formControlName="password" inputmode="numeric"></ion-input>
+        </ion-item>
+      </div>
+      <div class="mb-3">
+        <ion-item>
+          <ion-label  position="floating">Rol <ion-text color="danger">*</ion-text></ion-label>
+          <ion-select value="basico" placeholder="Seleccione el Rol" formControlName="role">
+            <ion-select-option value="administrador">Admin</ion-select-option>
+            <ion-select-option value="basico">Basico</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+      <div>
+        <ion-button (click)="onSubmit()" [disabled]="form.invalid" expand="block" shape="round" color="primary">
+          Entrar
+        </ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>

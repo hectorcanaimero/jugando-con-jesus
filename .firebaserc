@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jugando-con-jesus": {
+      "hosting": {
+        "app": [
+          "jugando-con-jesus"
+        ]
+      }
+    }
+  }
+}
