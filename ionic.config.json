@@ -1,0 +1,7 @@
+{
+  "name": "yemaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
